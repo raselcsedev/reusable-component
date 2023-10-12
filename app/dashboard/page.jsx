@@ -2,6 +2,7 @@
 
 import React from 'react';
 import AppTabs from '../component/tabs';
+import Overview from '../component/overview/Overview';
 const Dashboard = () => {
   const tabsData = [
     {
@@ -16,6 +17,9 @@ const Dashboard = () => {
   return (
     <div className="px-4 mt-8">
       <AppTabs tabData={tabsData} />
+      <div>
+        <Overview />
+      </div>
     </div>
   );
 };
