@@ -3,6 +3,7 @@
 import React from 'react';
 import AppTabs from '../component/tabs';
 import Overview from '../component/overview/Overview';
+import AddNewUser from '../component/modal/AddNewUser';
 const Dashboard = () => {
   const tabsData = [
     {
@@ -16,9 +17,10 @@ const Dashboard = () => {
 
   return (
     <div className="px-4 mt-8">
-      <AppTabs tabData={tabsData} />
-      <div>
+      <div className='space-y-8'>
         <Overview />
+        <AppTabs tabData={tabsData} />
+        <AddNewUser />
       </div>
     </div>
   );
